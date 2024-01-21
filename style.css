@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 50, 50);
+    color: white;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.logo, nav a {
+    padding: 20px 20px; /* Adjust the padding as needed */
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(193, 191, 191);
+}
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(./images/family-camping-at-sunset.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center 65%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#home h1  {
+    text-align: center;
+    margin-top: 3%;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}
+
+#home h5 {
+    font-size: larger;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#home .scroll-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: larger;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    transition: 0.4s ease;
+}
+
+#home .scroll-button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+
+/* Styling the services section */
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services .heading {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    padding: 35px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.card .card-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Styling the about section */
+#about-us {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+}
+
+#about-us .heading {
+    margin-bottom: 30px;
+}
+
+.about h3 {
+    margin-top: 40px;
+    margin-bottom: 17px;
+}
+
+
+.team ul{
+    margin-left: 16px;
+}
+
+
+/* Styling the contact section */
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#contact-us .heading {
+    margin-bottom: 60px;
+}
+
+
+.contacts {
+    display: flex;
+}
+
+.contacts .left,
+.contacts .right {
+    flex: 1;
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+
+.contacts .right form {
+    width: 100%; /* Ensure the form takes 100% of the container */
+}
+
+.left p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+.left p .material-symbols-outlined {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.right form input {
+    padding: 10px; /* Adjust the padding as needed */
+    width: 100%;
+}
+
+.right form textarea {
+    width: 100%;
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.sendmsg {
+    padding: 10px 12px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    letter-spacing: 1px;
+    font-size: large;
+    margin-top: 10px;
+}
